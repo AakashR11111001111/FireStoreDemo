@@ -1,0 +1,95 @@
+.nav{
+    background: #242424;
+    padding: 13px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+}
+
+.nav a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a.isActive{
+    color: red;
+    position: relative;
+}
+
+a.notActive{
+    text-decoration: none;
+    color: white;
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    background: white;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+.nav a.isActive::after{
+    width: 100%;
+}
+
+.prof{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* padding: .5vw 1vw; */
+    transition: all 0.3s ease;
+}
+
+.prof img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.prof h6{
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+.sideMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.sideMenu img{
+    height: 28px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sideMenu:hover{
+    box-shadow: 0 0 0px 7px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.signout{
+    cursor: pointer;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    padding: .2vw 1vw;    
+    color: white;
+}
+
+.signout:hover{
+    background: rgba(255, 255, 255, 0.1);
+}

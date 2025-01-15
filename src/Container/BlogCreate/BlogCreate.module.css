@@ -1,0 +1,82 @@
+.main{
+    height: calc(100vh - 57px);
+    background: #242424;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+
+.mainHead{
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+.form2{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tit{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tit input, .cap textarea{
+    border: none;
+    font-size: 16px;
+    padding: .2vw 1vw;
+    border-radius: 2px;
+    color: white;
+    transition: all 0.3s ease;
+    background-color: #444444;
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+.tit input:focus-within{
+    outline: 2px solid red;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cap textarea{
+    border-radius: 5px;
+    resize: none;
+    font-size: 15px;
+    color: white;
+    height: 250px;
+    width: 550px;
+}
+
+.cap textarea:focus-within{
+    outline: 2px solid red;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.2);
+}
+
+.postBtn{
+    cursor: pointer;
+    background-color: red;
+    padding: .3vw 1.2vw;
+}
+
+.postBtn:hover{
+    background: rgb(167, 0, 0);
+}
+
+.postBtn:active{
+    scale: 0.95;
+}
