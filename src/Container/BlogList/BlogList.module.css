@@ -4,4 +4,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow: scroll;
+}
+
+.main::-webkit-scrollbar{
+    width: 0;
 }
