@@ -21,6 +21,7 @@ function App() {
     const userDet = localStorage.getItem("UserDetails");
     if(userDet){
       const userDetails = JSON.parse(userDet);
+      setUser(userDetails);
     }
   },[])
 

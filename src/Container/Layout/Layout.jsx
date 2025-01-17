@@ -10,11 +10,12 @@ const Layout = () => {
         const localStorageUser = localStorage.getItem("UserDetails");
         if(localStorageUser){
             const details = JSON.parse(localStorageUser);
-            ctx.setUser(details)
+            ctx.setUser(details);
         }
         const isLoggedIn = ctx.user.displayName || localStorageUser;
-        
+        console.log("LOGGED IN KI VALUE =>", isLoggedIn);
         if(!isLoggedIn){
+            console.log("not OF IS LOGGED IN",!isLoggedIn);
             navigate("/");
         }
     },[])
